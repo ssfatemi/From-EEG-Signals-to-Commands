@@ -57,8 +57,90 @@ TSFF implements a **time-space-frequency feature fusion** approach for motor ima
 
 
 
-###
 
 ---
 
-##
+## 4. FSTA-Net — Frequency-Spatial-Time Attention Network
+
+**Paper:**  
+Li, W., Ma, Y., Qin, P., Wang, X., Yi, Z., Shao, K., & Wu, X. (2024). *FSTA-Net: Motor Imagery EEG Decoding Based on Frequency-Spatial-Time Features*. **IEEE Sensors Journal, 24(15), 24031–24043.**
+
+**DOI:**  
+[10.1109/JSEN.2024.3403875](https://doi.org/10.1109/JSEN.2024.3403875)
+
+**Code:**  
+No official public GitHub repository for the FSTA-Net implementation was identified during the search. The paper describes the method and evaluates it on **BCI Competition IV datasets 2a and 2b**.
+
+### Summary
+
+FSTA-Net is a deep-learning framework for **frequency-spatial-time (FST) feature extraction** in motor-imagery EEG decoding. It first uses **short-time Fourier transform (STFT)** to obtain time-frequency representations and then applies covariance operations to the time segments. The proposed network combines a **frequency-spatial attention module**, a **time-domain attention module**, and a classification network. A time-domain translation augmentation strategy is also introduced to reduce overfitting.
+
+---
+
+## 5. RCSP — Regularized Common Spatial Pattern
+
+**RCSP Toolbox:**  
+[Fabien Lotte — RCSP Toolbox](https://sites.google.com/site/fabienlotte/research/code-and-softwares)
+
+**R-CSP-A MATLAB implementation:**  
+[Regularized Common Spatial Pattern with Aggregation — MATLAB File Exchange](https://www.mathworks.com/matlabcentral/fileexchange/35734-regularized-common-spatial-pattern-with-aggregation-r-csp-a-for-eeg-classi-cation)
+
+**Paper:**  
+Lu, H., Eng, H.-L., Guan, C., Plataniotis, K. N., & Venetsanopoulos, A. N. (2010). *Regularized Common Spatial Pattern with Aggregation for EEG Classification in Small-Sample Setting*. **IEEE Transactions on Biomedical Engineering, 57(12), 2936–2946.**
+
+**DOI:**  
+[10.1109/TBME.2010.2082540](https://doi.org/10.1109/TBME.2010.2082540)
+
+### Summary
+
+Regularized Common Spatial Pattern (RCSP) extends conventional CSP by introducing **regularization into covariance estimation/spatial-filter optimization**, helping reduce estimation variance and overfitting when the available EEG training data are limited. R-CSP-A further aggregates multiple regularized CSP solutions. The approach is particularly relevant to **small-sample MI-BCI classification and robust spatial feature extraction**.
+
+---
+
+## 6. Covariance Toolbox
+
+**GitHub:**  
+[Covariance Toolbox — Alexandre Barachant](https://github.com/alexandrebarachant/covariancetoolbox)
+
+### Summary
+
+The Covariance Toolbox is a **MATLAB toolbox for covariance-matrix processing and Riemannian geometry**, developed for applications including EEG-based brain-computer interfaces. It provides tools for working with covariance matrices and Riemannian methods and has been used in EEG/BCI research involving covariance-based representations and transfer learning.
+
+The toolbox is particularly relevant to:
+
+- Covariance-matrix estimation
+- Riemannian geometry
+- EEG/BCI signal processing
+- Spatial feature representations
+- Transfer learning and domain adaptation
+
+---
+
+## 7. LMDA-Net — Lightweight Multi-Dimensional Attention Network
+
+**Code:**  
+[LMDA-Code — GitHub](https://github.com/MiaoZhengQing/LMDA-Code)
+
+**Paper:**  
+Miao, Z., Zhao, M., Zhang, X., & Ming, D. (2023). *LMDA-Net: A lightweight multi-dimensional attention network for general EEG-based brain-computer interfaces and interpretability*. **NeuroImage, 276, 120209.**
+
+**DOI:**  
+[10.1016/j.neuroimage.2023.120209](https://doi.org/10.1016/j.neuroimage.2023.120209)
+
+### Summary
+
+LMDA-Net is a **lightweight deep neural network for EEG-based BCI decoding** that introduces two EEG-oriented attention mechanisms: a **channel attention module** and a **depth attention module**. These modules integrate information across multiple dimensions while maintaining a relatively lightweight architecture.
+
+The public implementation includes:
+
+- LMDA-Net
+- EEGNet
+- ShallowConvNet
+- Model code and pretrained model components
+- Interpretability algorithms
+- BCI Competition IV-2a experiments
+
+The method was evaluated on multiple public BCI datasets and was designed to address challenges including **cross-dataset generalization, prediction stability, and neural-network interpretability**.
+
+---
+
