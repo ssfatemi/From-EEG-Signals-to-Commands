@@ -18,8 +18,11 @@ The repository is intended to support reproducibility, methodological comparison
 ## Authors
 
 Ardalan Faezmehr
+
 Shahab Fatemi
+
 Vahid Shalchyan
+
 Mohammad Reza Daliri
 
 
