@@ -21,7 +21,7 @@ MI-BMInet is an efficient convolutional neural network developed specifically fo
 Repository:\
 [CSP-based CDF Filtering — GitHub](https://github.com/Ardalan-Faezmehr/CSP_based_CDF_Filtering)
 
-Paper
+Paper:
 
 *Designing class discrepancy-guided sub-band filter using common frequency pattern for preprocessing EEG signals in MI-BCIs.*
 
