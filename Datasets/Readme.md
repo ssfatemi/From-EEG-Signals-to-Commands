@@ -116,8 +116,6 @@ GitHub:\
 
 MOABB (Mother of All BCI Benchmarks) is a framework that provides standardized access to a large collection of publicly available BCI datasets and enables reproducible benchmarking of EEG decoding algorithms. The current dataset catalog contains 160 curated BCI datasets and more than 3,600 subjects.
 
-Rather than being a single dataset, MOABB provides a convenient unified interface for accessing and benchmarking many datasets, including several of those listed in this document.
-
 
 
 # Additional MI-BCI Datasets
@@ -143,7 +141,6 @@ MOABB implementation:\
 [https://github.com/NeuroTechX/moabb/blob/develop/moabb/datasets/gigadb.py](https://github.com/NeuroTechX/moabb/blob/develop/moabb/datasets/gigadb.py)
 
 The Cho2017 dataset contains EEG recordings from 52 subjects performing left- and right-hand motor imagery. Data were recorded using 64 EEG electrodes at 512 Hz, making it a valuable relatively large-scale dataset for studying cross-subject MI classification and generalization.
-
 
 
 ## 12. BCI Competition III — Dataset IIIb
