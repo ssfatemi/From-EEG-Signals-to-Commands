@@ -15,3 +15,11 @@ This repository contains supplementary resources for the review paper, providing
 
 The repository is intended to support reproducibility, methodological comparison, and further research related to the machine-learning pipeline from EEG acquisition and preprocessing to feature extraction, classification, and command decoding in motor imagery brain-computer interfaces.
 
+## Authors
+
+Ardalan Faezmehr
+Shahab Fatemi
+Vahid Shalchyan
+Mohammad Reza Daliri
+
+
