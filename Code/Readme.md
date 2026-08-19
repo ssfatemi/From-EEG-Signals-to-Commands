@@ -1,54 +1,42 @@
 # MI-BCI Code Repositories
 
-This section provides links to publicly available code repositories related to **motor imagery brain-computer interfaces (MI-BCI)**, EEG preprocessing, deep learning architectures, feature extraction, and efficient/embedded implementation.
+This section provides links to publicly available code repositories related to motor imagery brain-computer interfaces (MI-BCI), EEG preprocessing, deep learning architectures, feature extraction, and efficient/embedded implementation.
 
 The repositories are included as reference implementations for methods discussed in the review and may be useful for reproduction, comparison, and further development.
 
----
-
 ## 1. MI-BMInet — Efficient CNN for MI-BCI
 
-**Repository:**\
+Repository:\
 [MI-BMInet — GitHub](https://github.com/pulp-platform/MI-BMInet)
 
-**Paper:**\
-Wang, X., Hersche, M., Magno, M., & Benini, L. (2024). *MI-BMInet: An Efficient Convolutional Neural Network for Motor Imagery Brain–Machine Interfaces With EEG Channel Selection*. **IEEE Sensors Journal, 24(6), 8835–8847.**
-
-**DOI:**\
-[10.1109/JSEN.2024.3353146](https://doi.org/10.1109/JSEN.2024.3353146)
+Paper:\
+Wang, X., Hersche, M., Magno, M., & Benini, L. (2024). *MI-BMInet: An Efficient Convolutional Neural Network for Motor Imagery Brain–Machine Interfaces With EEG Channel Selection. IEEE Sensors Journal, 24(6), 8835–8847.[10.1109/JSEN.2024.3353146](https://doi.org/10.1109/JSEN.2024.3353146)
 
 ### Summary
 
-MI-BMInet is an efficient convolutional neural network developed specifically for **motor imagery EEG-based brain-machine interfaces**. The repository covers the development pipeline from model training through **quantization and deployment on resource-constrained hardware**.
-
----
+MI-BMInet is an efficient convolutional neural network developed specifically for motor imagery EEG-based brain-machine interfaces. The repository covers the development pipeline from model training through quantization and deployment on resource-constrained hardware.
 
 ## 2. CSP-Based CDF Filtering
 
-**Repository:**\
+Repository:\
 [CSP-based CDF Filtering — GitHub](https://github.com/Ardalan-Faezmehr/CSP_based_CDF_Filtering)
 
-### Associated Paper
+Paper
 
 *Designing class discrepancy-guided sub-band filter using common frequency pattern for preprocessing EEG signals in MI-BCIs.*
 
 ### Summary
 
-This repository provides code associated with an EEG preprocessing approach based on **class discrepancy-guided sub-band filtering** and **Common Spatial Pattern (CSP)**-related processing.
+This repository provides code for an EEG preprocessing approach based on class-discrepancy-guided sub-band filtering and Common Spatial Pattern (CSP)-related processing.
 
-
-
----
 
 ## 3. TSFF — Time-Space-Frequency Feature Fusion
 
-**Repository:**\
+Repository:\
 [TSFF — GitHub](https://github.com/MiaoZhengQing/TSFF)
 
-**Paper:**\
+Paper:\
 Miao, Z., & Zhao, M. (2023). *Time-space-frequency feature Fusion for 3-channel motor imagery classification*. arXiv:2304.01461.
-
-**Paper:**\
 [arXiv:2304.01461](https://arxiv.org/abs/2304.01461)
 
 ### Summary
@@ -56,26 +44,14 @@ Miao, Z., & Zhao, M. (2023). *Time-space-frequency feature Fusion for 3-channel 
 TSFF implements a **time-space-frequency feature fusion** approach for motor imagery classification using EEG signals.
 
 
-
-
----
-
 ## 4. FSTA-Net — Frequency-Spatial-Time Attention Network
 
-**Paper:**  
-Li, W., Ma, Y., Qin, P., Wang, X., Yi, Z., Shao, K., & Wu, X. (2024). *FSTA-Net: Motor Imagery EEG Decoding Based on Frequency-Spatial-Time Features*. **IEEE Sensors Journal, 24(15), 24031–24043.**
-
-**DOI:**  
-[10.1109/JSEN.2024.3403875](https://doi.org/10.1109/JSEN.2024.3403875)
-
-**Code:**  
-No official public GitHub repository for the FSTA-Net implementation was identified during the search. The paper describes the method and evaluates it on **BCI Competition IV datasets 2a and 2b**.
+**Paper: 
+Li, W., Ma, Y., Qin, P., Wang, X., Yi, Z., Shao, K., & Wu, X. (2024). *FSTA-Net: Motor Imagery EEG Decoding Based on Frequency-Spatial-Time Features*. IEEE Sensors Journal, 24(15), 24031–24043. [10.1109/JSEN.2024.3403875](https://doi.org/10.1109/JSEN.2024.3403875)
 
 ### Summary
 
 FSTA-Net is a deep-learning framework for **frequency-spatial-time (FST) feature extraction** in motor-imagery EEG decoding. It first uses **short-time Fourier transform (STFT)** to obtain time-frequency representations and then applies covariance operations to the time segments. The proposed network combines a **frequency-spatial attention module**, a **time-domain attention module**, and a classification network. A time-domain translation augmentation strategy is also introduced to reduce overfitting.
-
----
 
 ## 5. RCSP — Regularized Common Spatial Pattern
 
@@ -95,8 +71,6 @@ Lu, H., Eng, H.-L., Guan, C., Plataniotis, K. N., & Venetsanopoulos, A. N. (2010
 
 Regularized Common Spatial Pattern (RCSP) extends conventional CSP by introducing **regularization into covariance estimation/spatial-filter optimization**, helping reduce estimation variance and overfitting when the available EEG training data are limited. R-CSP-A further aggregates multiple regularized CSP solutions. The approach is particularly relevant to **small-sample MI-BCI classification and robust spatial feature extraction**.
 
----
-
 ## 6. Covariance Toolbox
 
 **GitHub:**  
@@ -114,8 +88,6 @@ The toolbox is particularly relevant to:
 - Spatial feature representations
 - Transfer learning and domain adaptation
 
----
-
 ## 7. LMDA-Net — Lightweight Multi-Dimensional Attention Network
 
 **Code:**  
@@ -131,16 +103,4 @@ Miao, Z., Zhao, M., Zhang, X., & Ming, D. (2023). *LMDA-Net: A lightweight multi
 
 LMDA-Net is a **lightweight deep neural network for EEG-based BCI decoding** that introduces two EEG-oriented attention mechanisms: a **channel attention module** and a **depth attention module**. These modules integrate information across multiple dimensions while maintaining a relatively lightweight architecture.
 
-The public implementation includes:
-
-- LMDA-Net
-- EEGNet
-- ShallowConvNet
-- Model code and pretrained model components
-- Interpretability algorithms
-- BCI Competition IV-2a experiments
-
-The method was evaluated on multiple public BCI datasets and was designed to address challenges including **cross-dataset generalization, prediction stability, and neural-network interpretability**.
-
----
 
